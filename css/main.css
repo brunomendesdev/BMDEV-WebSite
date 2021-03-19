@@ -29,14 +29,9 @@ body{
     justify-content: center;
 }
 
-img{
-    width: 35rem;
-}
-
 h1{
     font-size: 8rem;
-    line-height: 1,5;
-    
+    line-height: 1,5;   
 }
 
 h2{  
