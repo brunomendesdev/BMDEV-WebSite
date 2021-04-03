@@ -197,7 +197,7 @@ li img:hover{
 
 @media(max-width: 400px){
     li img{
-        height: 4rem;
+        height: 3rem;
         /* width: 5rem;   */
     }
     
