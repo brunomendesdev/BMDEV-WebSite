@@ -1,40 +1,128 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 html {
     font-size: 62.5%;
 }
 
 body{
+    width: 100%;
     height: 100vh;
     color: white;
 }
 
-@font-face {
-    font-family: 'Economica';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Economica'), local('Economica-Regular'), url(https://fonts.googleapis.com/css2?family=Economica:wght@700&display=swap) format('woff2');
-}
-
 #page-landing {
     background-image: linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%);
-    font-family: 'Economica', sans-serif;
+    font-family: 'Inconsolata', monospace;
     text-align: center;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 
-h1{
-    font-size: 8rem;
-    line-height: 1,5;   
+.container{
+    width: 70vw;
 }
 
-h2{  
+header{
+    margin: 5rem auto 5rem auto
+}
+
+.header-content h1{
+    font-size: 5rem;
+}
+
+.main-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+}
+
+.section-one{
+    width: 100%;
+    display: flex;
+}
+
+.section-one img{
+    height: 30rem;
+    border-radius: 50%;
+}
+
+.description{
+    width: 100%;
+}
+
+.description .desc-content{
+    width: 100%;
+    padding-left: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+}
+
+.description h2{
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.description p{
+    text-indent: 20px;
+    font-size: 2.7rem;
+    text-align:justify;
+    margin: .5rem auto .5rem auto;
+}
+
+.section-two{
+    margin-top: 5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    /* border: 3px solid red; */
+}
+
+.section-two img{
+    height: 30rem;
+}
+
+#img-span{
+    font-size: 1.5rem;
+    color: navy;
+}
+
+.section-two .desc{
+    margin-right: 3rem;
+}
+
+.section-two h2{
+    font-size: 3.5rem;
+    margin-bottom: 3rem;
+}
+
+.section-two p{
+    text-indent: 20px;
+    font-size: 2.7rem;
+    text-align:justify;
+    margin: .5rem auto .5rem auto;
+}
+
+#plus{
+    margin: 3rem auto 3rem auto;
+    font-size: 2rem;
+}
+
+
+footer{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+footer p{
     font-size: 3.5rem;
 }
 
@@ -50,38 +138,60 @@ ul{
 
 li { 
     display: inline-block;
-    padding: 0 1.5rem;
+    padding: 0 2.5rem;
+}
+
+li:hover{
+    border-bottom: 3px solid navy;
 }
 
 li img{
-    height: 5rem;
-    width: 5rem;  
+    height: 6rem;
+    /* width: 5rem;   */
 }
 
-@media(max-width: 1160px){
-    html{
-        font-size: 50%;
+li img:hover{
+    height: 7rem;
+    /* width: 5rem;   */
+}
+
+
+
+
+
+/* --------- MOBILE --------- */
+
+@media(max-width: 1000px){
+    .section-one{
+        flex-direction: column;
     }
-
+    .description{
+        margin-top: 5rem;
+    }
+    .description .desc-content{
+        padding-left: 0;
+    }
+    .description .desc-content h2{
+        margin: 0 auto 0 auto;
+        margin-bottom: 2rem;
+    }
 }
 
-@media(max-width: 928px){
+@media(max-width: 900px){
     html{
         font-size: 45%;
     }
-
 }
 
-@media(max-width: 316px){
-    html{
-        font-size: 40%;
+@media(max-width: 650px){
+    .container{
+        width: 95vw;
     }
-
 }
-/*
-@media(max-width: 465px){
-    html{
-        font-size: 50%;
-    }
 
-} */
+@media(max-width: 475px){
+    html{
+        font-size: 32%;
+    }
+}
+
