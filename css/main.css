@@ -197,7 +197,7 @@ li img:hover{
 
 @media(max-width: 400px){
     .section-two img{
-        height: 25rem;
+        height: 20rem;
     }
     li img{
         height: 4rem;
