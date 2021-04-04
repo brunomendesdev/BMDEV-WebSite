@@ -40,7 +40,7 @@ function createCardFace(face, card, element){
     if(face === FRONT){
         let iconElement = document.createElement('img')
         iconElement.classList.add(ICON)
-        iconElement.src = "./assets/images/"+card.icon+".png"
+        iconElement.src = "./public/images/"+card.icon+".png"
         cardElementFace.appendChild(iconElement)
     }else{
         cardElementFace.innerHTML = "&lt/&gt"
