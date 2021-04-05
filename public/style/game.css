@@ -83,10 +83,10 @@ body{
 #gameBoard{
     max-width: 700px;
     display: grid;
-    grid-template: 1fr 1fr 1fr 1fr 1fr/ 1fr 1fr 1fr 1fr;
-    row-gap: 2rem;
-    column-gap: 2rem;
-    /* gap: 2rem; */
+    grid-template: 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
+    /* row-gap: 2rem;
+    column-gap: 2rem; */
+    grid-gap: 2rem;
 }
 
 @media(max-width: 1500px){
