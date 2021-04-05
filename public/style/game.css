@@ -14,9 +14,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* height: 100vh; */
-    min-height: 100vh;
-    min-height: -webkit-fill-available;
+    height: 100vh;
     background-color: #c7cdd3;
 }
 
@@ -112,6 +110,11 @@ body{
 @media(max-width: 450px){
     html{
         font-size: 35%;
+        height: -webkit-fill-available;
+    }
+    body{
+        min-height: 100vh;
+        min-height: -webkit-fill-available;
     }
 }
 
