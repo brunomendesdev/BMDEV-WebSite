@@ -6,7 +6,6 @@
 
 html {
     font-size: 62.5%;
-    height: -webkit-fill-available;
 }
 
 body{
@@ -15,6 +14,7 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    height: -webkit-fill-available;
     height: calc(var(--vh, 1vh) * 100);
     background-color: #c7cdd3;
 }
@@ -111,14 +111,7 @@ body{
 @media(max-width: 450px){
     html{
         font-size: 35%;
-        /* height: -webkit-fill-available;
-        height: fill-available; */
     }
-    /* body{
-        min-height: 100vh;
-        min-height: -webkit-fill-available;
-        height: fill-available;
-    } */
 }
 
 @media(max-width: 400px){
