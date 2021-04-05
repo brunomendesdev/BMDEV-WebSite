@@ -18,8 +18,8 @@ body{
 }
 
 .card{
-    width: 15rem;
-    height: 15rem;
+    /* width: 15rem;
+    height: 15rem; */
     position: relative;
     transform-style: preserve-3d;
     transition: transform .5s;
