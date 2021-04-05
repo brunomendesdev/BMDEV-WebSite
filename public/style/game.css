@@ -111,10 +111,12 @@ body{
     html{
         font-size: 35%;
         height: -webkit-fill-available;
+        height: fill-available;
     }
     body{
         min-height: 100vh;
         min-height: -webkit-fill-available;
+        height: fill-available;
     }
 }
 
