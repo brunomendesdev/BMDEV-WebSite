@@ -35,6 +35,7 @@ body{
     border-radius: 2rem;
     box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.45);
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 
 }
 
